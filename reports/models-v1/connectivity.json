@@ -1,0 +1,18 @@
+[
+  {
+    "cache_bust": false,
+    "status": 206,
+    "host": "us.aws.cdn.hf.co",
+    "content_range": "bytes 0-1023/4994582224",
+    "bytes_read": 1024,
+    "seconds": 3.890999999945052
+  },
+  {
+    "cache_bust": true,
+    "status": 206,
+    "host": "us.aws.cdn.hf.co",
+    "content_range": "bytes 0-1023/4994582224",
+    "bytes_read": 1024,
+    "seconds": 5.734000000054948
+  }
+]

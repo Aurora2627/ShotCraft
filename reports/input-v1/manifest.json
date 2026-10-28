@@ -1,0 +1,119 @@
+{
+  "source_dataset": "DAVIS 2017 trainval 480p",
+  "source_page": "https://davischallenge.org/davis2017/code.html",
+  "sequence": "car-roundabout",
+  "object_id": 1,
+  "count": 17,
+  "shape": [
+    17,
+    288,
+    432,
+    3
+  ],
+  "records": [
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00000.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00000.png",
+      "image_sha256": "fee22e5cbf368f7b24d89217ef792cb2d3810dd8654d445009fa672074a9426f",
+      "mask_sha256": "e92d6f06c17c5b79305769cce8ece99ff5d94ef2199a51fb4321f4b18e610f9c"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00001.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00001.png",
+      "image_sha256": "289f32746912bbf01599f9416f3f4ac690698fdefe53f9e53140b8aae39ff292",
+      "mask_sha256": "5ccec5ebd936bc3455ed3fa55a687ea296956d08b018e77a79d73e326e0a8d0a"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00002.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00002.png",
+      "image_sha256": "1c61ec4417ad1315605f000b6ce9b2204194c493b73a32ba75c9925cf35ffa52",
+      "mask_sha256": "0b72fb6f8f09ece53d74a2cf38fe6d51583eb716b68917985e8b7a0bb1427c2f"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00003.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00003.png",
+      "image_sha256": "6c9defc83b2821ef8ec07f5c4262b1932c92ea5c87bad0d8a6575494d5d2dcce",
+      "mask_sha256": "cd8103c95c0b878dab4ba9d9d3f881a48caedd868e2fbdb99ce4d31eefaf61a0"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00004.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00004.png",
+      "image_sha256": "b60516e1f2dd6a92c75abf64af031254dfd279081ac4bf9d397289bcfad9a440",
+      "mask_sha256": "a6a4fc0821ba464d502b2970828273699653a0eebef8c127d0d016da8a19fc0b"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00005.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00005.png",
+      "image_sha256": "93b4d9642096a1ef87c95c009760e94e95e2f6b4835b11899507f10826082539",
+      "mask_sha256": "f72e25d03fec1a36489b85648d11ec579baf3873ebcf4544a7e9e81786ed868e"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00006.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00006.png",
+      "image_sha256": "20c2e91f7c9233b9588e528a36817b9fddd571bf0693a3e016cdea86536cd310",
+      "mask_sha256": "ac6b6e5ab5a33ba8ad2aaa85df3a46db39f495dc293a5da64f4d01d89e302e22"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00007.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00007.png",
+      "image_sha256": "2aa4c2cb402d2042a5ce2bba6f6901d213121f7fe60c70f76fa53d035b686145",
+      "mask_sha256": "c09a0625989e61474a9405e49989afefb646984a960329fb4b0022c36b3bc4f7"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00008.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00008.png",
+      "image_sha256": "5d16a71aaddb24adfec98adf3eae2360c001b30337420101c59449474f7e4713",
+      "mask_sha256": "6ca025898d95f53ac8e73a69805f954c634f3ab94af2c9ece664803974a09a57"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00009.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00009.png",
+      "image_sha256": "1440fb4192515ae7fb1374f1585f04cd0a3accddda1a470568491e56d66647a7",
+      "mask_sha256": "46b5a6a580393bbd3c3efc9b72adb5b7cc0b5a141d020fed6745a200f6e0549e"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00010.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00010.png",
+      "image_sha256": "5fc61feaa8aaed8e5d6cf31d6efe7bacd0d87bcd05ef2b1b7f0a62a87d60ecd0",
+      "mask_sha256": "01fd1bfa91b2c217b7caedf678fb163de52615671f4fd4c227ea95d957fe7b23"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00011.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00011.png",
+      "image_sha256": "15cfedeafb18ac1b4073278993b657ced0d4235084cb2e5946ed8c18c6331dd8",
+      "mask_sha256": "fd4051958dd4a3dd559db66a7c1d8dba59087c99628e204fa5621d84736a3ca0"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00012.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00012.png",
+      "image_sha256": "73ebf6df6a1d222e63bd3b30ddae84531f664be9617e4f0302bddbaa777475a3",
+      "mask_sha256": "03bd4c96d6df7f852fcbcae48cd5efd5184faf451bbb40938e0753c0f2c110c6"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00013.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00013.png",
+      "image_sha256": "3b407887d54bf5d4381d047adc24d441f98b6c5a6d0a0264d01092dcf43ec679",
+      "mask_sha256": "cbaa8e907f529e87669291ded19faa265e1047a741ebd3d541cfee8ceb202f04"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00014.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00014.png",
+      "image_sha256": "3b0afe6caec503eba9d8a6ce778a9125939600980a095a3528e49c57dea945c0",
+      "mask_sha256": "bc51550ff184d449ed7dc7cf83b50c2d65d84acb5a7d713ecd6e5f479885d0d2"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00015.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00015.png",
+      "image_sha256": "eaab97b02259814a65aa0470b63caa52612333c7b7621656fb7b2f51ce330847",
+      "mask_sha256": "0efd13825b3c479790b00adbca47386f3cb0768bc7739f5ca7116ca13fc1bc76"
+    },
+    {
+      "image": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\JPEGImages\\00016.jpg",
+      "mask": "D:\\career-projects\\data\\SceneEdit\\davis-car-cases\\car-roundabout\\raw\\Annotations\\00016.png",
+      "image_sha256": "9a219dff556dbadd907965f81682d13dbfd35730dc030ceed055e9618b6c2a67",
+      "mask_sha256": "4205b93d53ff4ca3a6eecd90359c0a3fe31a673612ff0da79379f62597ffe779"
+    }
+  ],
+  "clip_sha256": "c5011fe46867dcecb33dd0061e7b7ae2ecfb693caa41ae46db693e23af73c500",
+  "scope": "Frame-only development smoke. Nominal 8 fps playback; original timing/audio not established. Letterbox excluded by valid_region."
+}

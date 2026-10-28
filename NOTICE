@@ -1,0 +1,5 @@
+ShotCraft is an independently designed application and control/evaluation system.
+VideoPainter is a third-party generation backend by TencentARC and its authors.
+Source: https://github.com/TencentARC/VideoPainter
+VideoPainter components and model weights are subject to their upstream research-only license and applicable CogVideoX terms. Preserve all upstream notices.
+No claim is made to have invented the VideoPainter backbone, context branch or ID resampling technique.

@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/TencentARC/VideoPainter.git",
+  "commit": "bbab6cd5cd5cb89f0e2444305c32fd74a010ae0a",
+  "role": "Third-party generation backend",
+  "license": "Upstream research/education restrictions apply",
+  "weights_downloaded": false
+}

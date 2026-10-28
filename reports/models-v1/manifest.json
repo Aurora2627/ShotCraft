@@ -1,0 +1,119 @@
+{
+  "models": [
+    {
+      "repository": "THUDM/CogVideoX-5b-I2V",
+      "revision": "a6f0f4858a8395e7429d82493864ce92bf73af11",
+      "directory": "CogVideoX-5b-I2V",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 5704,
+          "sha256": null
+        },
+        {
+          "path": "model_index.json",
+          "bytes": 423,
+          "sha256": null
+        },
+        {
+          "path": "scheduler/scheduler_config.json",
+          "bytes": 482,
+          "sha256": null
+        },
+        {
+          "path": "text_encoder/config.json",
+          "bytes": 782,
+          "sha256": null
+        },
+        {
+          "path": "text_encoder/model-00001-of-00002.safetensors",
+          "bytes": 4994582224,
+          "sha256": "9162b8ae9152e7a8e3bbebc535c8692783f50aec8cd3bb8ef6a751c432dd6392"
+        },
+        {
+          "path": "text_encoder/model-00002-of-00002.safetensors",
+          "bytes": 4530066360,
+          "sha256": "d3edef29693d52402b1cc7c362f031e052f2e9482ed0c765c6351950434349b0"
+        },
+        {
+          "path": "text_encoder/model.safetensors.index.json",
+          "bytes": 19885,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/added_tokens.json",
+          "bytes": 2593,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 2543,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/spiece.model",
+          "bytes": 791656,
+          "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 20617,
+          "sha256": null
+        },
+        {
+          "path": "transformer/config.json",
+          "bytes": 802,
+          "sha256": null
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+          "bytes": 4992465072,
+          "sha256": "f2e3060199c34a0d18892a19d687455f938b0ac3d2ea7d48f37cb4090e141965"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+          "bytes": 4985800640,
+          "sha256": "1e8d0c62d366b0d9cc3476d2b21ca54afbecea154d54d923da120b2ec174c7e7"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+          "bytes": 1272025856,
+          "sha256": "da91a0051da3f39caf10944b7c9aa66b14ddeffb37a25b087c49fc1692c1a361"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "bytes": 103161,
+          "sha256": null
+        },
+        {
+          "path": "vae/config.json",
+          "bytes": 872,
+          "sha256": null
+        },
+        {
+          "path": "vae/diffusion_pytorch_model.safetensors",
+          "bytes": 862388596,
+          "sha256": "a410e48d988c8224cef392b68db0654485cfd41f345f4a3a81d3e6b765bb995e"
+        }
+      ]
+    },
+    {
+      "repository": "TencentARC/VideoPainter",
+      "revision": "52bc9fd04553ad177158b8bcf42590670339e226",
+      "directory": "VideoPainter",
+      "files": [
+        {
+          "path": "VideoPainter/checkpoints/branch/config.json",
+          "bytes": 926,
+          "sha256": null
+        },
+        {
+          "path": "VideoPainter/checkpoints/branch/diffusion_pytorch_model.safetensors",
+          "bytes": 712360464,
+          "sha256": "5d01728cb0cb605b591f41cbea033db22d5ae72d0b37565957feae71b089be8e"
+        }
+      ]
+    }
+  ],
+  "scope": "Pinned official inference weights; no generation result"
+}

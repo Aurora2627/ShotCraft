@@ -1,0 +1,12 @@
+{
+  "python.defaultInterpreterPath": "D:/career-projects/envs/shotcraft/Scripts/python.exe",
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ]
+}

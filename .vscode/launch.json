@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ShotCraft：验证核心模块",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/verify_core.py",
+      "cwd": "${workspaceFolder}",
+      "python": "D:/career-projects/envs/shotcraft/Scripts/python.exe",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "justMyCode": true
+    }
+  ]
+}
