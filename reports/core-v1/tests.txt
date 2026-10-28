@@ -29,10 +29,16 @@ RANGE_RETRY weights.safetensors 0 attempt 3 RuntimeError
 RANGE_RETRY weights.safetensors 0 attempt 4 RuntimeError
 RANGE_RETRY weights.safetensors 0 attempt 5 RuntimeError
 RANGE_RETRY weights.safetensors 0 attempt 6 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 7 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 8 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 9 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 10 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 11 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 12 RuntimeError
 ok
 test_wrong_hash_is_not_published (test_download_contract.RangeContracts.test_wrong_hash_is_not_published) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 0.883s
+Ran 25 tests in 1.614s
 
 OK

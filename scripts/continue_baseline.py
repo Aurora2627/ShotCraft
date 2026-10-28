@@ -57,7 +57,8 @@ def main():
                 running = False
             if not running:
                 raise RuntimeError(
-                    "The weight download stopped before verification; inspect models-download.log"
+                    "The weight download stopped before verification; inspect "
+                    + metadata.get("log", "download-ranges.log")
                 )
             if time.monotonic() > deadline:
                 raise TimeoutError(

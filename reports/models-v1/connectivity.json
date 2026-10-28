@@ -5,7 +5,7 @@
     "host": "us.aws.cdn.hf.co",
     "content_range": "bytes 0-1023/4994582224",
     "bytes_read": 1024,
-    "seconds": 3.890999999945052
+    "seconds": 2.594000000040978
   },
   {
     "cache_bust": true,
@@ -13,6 +13,6 @@
     "host": "us.aws.cdn.hf.co",
     "content_range": "bytes 0-1023/4994582224",
     "bytes_read": 1024,
-    "seconds": 5.734000000054948
+    "seconds": 2.5149999998975545
   }
 ]

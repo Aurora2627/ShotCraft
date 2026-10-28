@@ -77,7 +77,7 @@ def fetch(model, item):
     last_report = time.monotonic()
     while position < expected:
         end = min(expected - 1, position + CHUNK - 1)
-        for attempt in range(6):
+        for attempt in range(12):
             try:
                 url = (
                     base
@@ -92,7 +92,7 @@ def fetch(model, item):
                     url,
                     headers={"Range": f"bytes={position}-{end}"},
                     stream=True,
-                    timeout=(10, 30),
+                    timeout=(20, 60),
                 ) as response:
                     response.raise_for_status()
                     wanted = f"bytes {position}-{end}/{expected}"
@@ -141,9 +141,9 @@ def fetch(model, item):
                     attempt + 1,
                     type(error).__name__,
                 )
-                if attempt == 5:
+                if attempt == 11:
                     raise
-                time.sleep(min(2**attempt, 16))
+                time.sleep(min(2**attempt, 30))
     actual = digest(part)
     if item["sha256"] and actual != item["sha256"]:
         raise RuntimeError("LFS SHA-256 mismatch: " + item["path"])
