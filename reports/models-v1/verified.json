@@ -1,0 +1,102 @@
+[
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "LICENSE",
+    "sha256": "f1702a540abe80caa3458a4eb539d8a138ffeab99d971d14a99083726814037e"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "model_index.json",
+    "sha256": "dc7e10203a3d10307e19d35026fd8d52b78fe52c0b0d770fe710e17441affd29"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "scheduler/scheduler_config.json",
+    "sha256": "247ecd6635dae7bf889a7ec69ba951c44d746cb4edef13b9c3b1b16bfeeedba5"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "text_encoder/config.json",
+    "sha256": "fd42789863fc8c15b592f0ff1aec684cf5d7aaabcdce50f43a447aeaac2491e3"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "text_encoder/model-00001-of-00002.safetensors",
+    "sha256": "9162b8ae9152e7a8e3bbebc535c8692783f50aec8cd3bb8ef6a751c432dd6392"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "text_encoder/model-00002-of-00002.safetensors",
+    "sha256": "d3edef29693d52402b1cc7c362f031e052f2e9482ed0c765c6351950434349b0"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "text_encoder/model.safetensors.index.json",
+    "sha256": "3bacec0f0cf392399d4a385908f67dd73df99c9e9cfee669f148858ba9fbdb0a"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "tokenizer/added_tokens.json",
+    "sha256": "ea5a91a3234f66ea642c8e672d67f0f493759a9bee6910ae304ea9b9492118b5"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "tokenizer/special_tokens_map.json",
+    "sha256": "7a1985a994c41886db38c719d2a3d2f40606663cc19d7c5d6a85d349320e06d2"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "tokenizer/spiece.model",
+    "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "tokenizer/tokenizer_config.json",
+    "sha256": "9c4f8a92630f7c6cc082831b291d6f46f18455d69d1a2a52c9b5f5303ab01469"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "transformer/config.json",
+    "sha256": "c99b9c27aba51f362f6195652eedb2576fa6cc5b9fceaedc00028a4a1679f1d2"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+    "sha256": "f2e3060199c34a0d18892a19d687455f938b0ac3d2ea7d48f37cb4090e141965"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+    "sha256": "1e8d0c62d366b0d9cc3476d2b21ca54afbecea154d54d923da120b2ec174c7e7"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+    "sha256": "da91a0051da3f39caf10944b7c9aa66b14ddeffb37a25b087c49fc1692c1a361"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "transformer/diffusion_pytorch_model.safetensors.index.json",
+    "sha256": "ebf7640e8e1f2cb6610b04bf7de1ffea8a890e2c75fc3ab351d11b17ccf05d34"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "vae/config.json",
+    "sha256": "fe8805ed9e30af09fecf04f870a2f11391cea21ddf1446fe22ba220fa4538238"
+  },
+  {
+    "repository": "THUDM/CogVideoX-5b-I2V",
+    "path": "vae/diffusion_pytorch_model.safetensors",
+    "sha256": "a410e48d988c8224cef392b68db0654485cfd41f345f4a3a81d3e6b765bb995e"
+  },
+  {
+    "repository": "TencentARC/VideoPainter",
+    "path": "VideoPainter/checkpoints/branch/config.json",
+    "sha256": "231947dcb3788404fd57bd3f7443d887fdb90828f99ae4408c0a71be0ed05577"
+  },
+  {
+    "repository": "TencentARC/VideoPainter",
+    "path": "VideoPainter/checkpoints/branch/diffusion_pytorch_model.safetensors",
+    "sha256": "5d01728cb0cb605b591f41cbea033db22d5ae72d0b37565957feae71b089be8e"
+  }
+]

@@ -7,12 +7,28 @@ Actual generation remains unverified until recorded in an experiment report.
 
 from pathlib import Path
 import sys
+import json
 import numpy as np
 import torch
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 UPSTREAM = ROOT / "third_party/VideoPainter"
+
+
+def validate_model_geometry(shape, base_model, branch):
+    """Reject unsupported learned-position geometry before loading model weights."""
+    base_model, branch = Path(base_model), Path(branch)
+    vae = json.loads((base_model / "vae/config.json").read_text())
+    scale = 2 ** (len(vae["block_out_channels"]) - 1)
+    for path in [base_model / "transformer/config.json", branch / "config.json"]:
+        config = json.loads(path.read_text())
+        if config.get("use_learned_positional_embeddings", False):
+            expected = (config["sample_height"] * scale, config["sample_width"] * scale)
+            if tuple(shape[1:3]) != expected:
+                raise ValueError(
+                    f"Model requires height/width {expected}, got {tuple(shape[1:3])}; prepare a new native-resolution input"
+                )
 
 
 def validate_clip(frames, masks):

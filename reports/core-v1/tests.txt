@@ -37,8 +37,9 @@ RANGE_RETRY weights.safetensors 0 attempt 11 RuntimeError
 RANGE_RETRY weights.safetensors 0 attempt 12 RuntimeError
 ok
 test_wrong_hash_is_not_published (test_download_contract.RangeContracts.test_wrong_hash_is_not_published) ... ok
+test_native_accepted_and_small_rejected_before_loading (test_model_geometry.ModelGeometryTests.test_native_accepted_and_small_rejected_before_loading) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 1.614s
+Ran 26 tests in 3.141s
 
 OK

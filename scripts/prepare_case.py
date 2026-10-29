@@ -19,8 +19,8 @@ def main():
     parser.add_argument("--raw-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--count", type=int, default=17)
-    parser.add_argument("--width", type=int, default=432)
-    parser.add_argument("--height", type=int, default=288)
+    parser.add_argument("--width", type=int, default=720)
+    parser.add_argument("--height", type=int, default=480)
     parser.add_argument("--object-id", type=int, default=1)
     args = parser.parse_args()
     if (

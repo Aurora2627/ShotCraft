@@ -15,7 +15,7 @@ import psutil
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = Path("D:/career-projects/runs/ShotCraft/setup-20261028")
-TARGET = Path("D:/career-projects/runs/ShotCraft/20261028-baseline-smoke-v1")
+TARGET = Path("D:/career-projects/runs/ShotCraft/20261029-baseline-native-smoke-v2")
 
 
 def main():
@@ -78,7 +78,7 @@ def main():
             "-u",
             str(ROOT / "scripts/run_baseline.py"),
             "--input",
-            "D:/career-projects/data/ShotCraft/smoke-car-roundabout-v1/clip.npz",
+            "D:/career-projects/data/ShotCraft/smoke-car-roundabout-native-v1/clip.npz",
             "--output",
             str(TARGET),
             "--prompt",

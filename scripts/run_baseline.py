@@ -12,7 +12,11 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from shotcraft.videopainter import VideoPainterBackend, validate_clip
+from shotcraft.videopainter import (
+    VideoPainterBackend,
+    validate_clip,
+    validate_model_geometry,
+)
 
 
 def main():
@@ -72,6 +76,7 @@ def main():
             args.model_root / "CogVideoX-5b-I2V",
             args.model_root / "VideoPainter/VideoPainter/checkpoints/branch",
         )
+        validate_model_geometry(frames.shape, backend.base_model, backend.branch)
         started = time.monotonic()
         backend.load()
         result["load_seconds"] = time.monotonic() - started
