@@ -15,7 +15,7 @@ import psutil
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = Path("D:/career-projects/runs/ShotCraft/setup-20261028")
-TARGET = Path("D:/career-projects/runs/ShotCraft/20261029-baseline-native-smoke-v2")
+TARGET = Path("D:/career-projects/runs/ShotCraft/20261029-baseline-memory-smoke-v3")
 
 
 def main():
@@ -78,11 +78,15 @@ def main():
             "-u",
             str(ROOT / "scripts/run_baseline.py"),
             "--input",
-            "D:/career-projects/data/ShotCraft/smoke-car-roundabout-native-v1/clip.npz",
+            "D:/career-projects/data/ShotCraft/smoke-car-roundabout-native9-v1/clip.npz",
             "--output",
             str(TARGET),
             "--prompt",
             "An empty curved road and surrounding buildings, no car on the road.",
+            "--guidance-scale",
+            "1.0",
+            "--attention-backend",
+            "efficient",
             "--steps",
             "8",
             "--seed",

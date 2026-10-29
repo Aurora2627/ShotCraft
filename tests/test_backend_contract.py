@@ -59,6 +59,36 @@ class AdapterContractTests(unittest.TestCase):
         self.assertTrue(np.array_equal(masks, self.masks))
         self.assertEqual(np.asarray(calls[0]["masks"][0]).sum(), 0)
 
+    def test_single_pass_guidance_disables_dynamic_cfg(self):
+        from types import SimpleNamespace
+        from unittest.mock import Mock
+
+        backend = VideoPainterBackend("not-loaded", "not-loaded")
+        backend.pipe = Mock(
+            return_value=SimpleNamespace(frames=[self.frames.astype(np.float32) / 255])
+        )
+        callback = lambda pipeline, step, timestep, kwargs: kwargs
+        backend.generate(
+            self.frames,
+            self.masks,
+            "empty road",
+            guidance_scale=1.0,
+            clean_first_frame=self.frames[0],
+            callback_on_step_end=callback,
+        )
+        call = backend.pipe.call_args.kwargs
+        self.assertFalse(call["use_dynamic_cfg"])
+        self.assertEqual(call["guidance_scale"], 1.0)
+        self.assertIs(call["callback_on_step_end"], callback)
+
+    def test_invalid_guidance_rejected_before_loading(self):
+        backend = VideoPainterBackend("missing", "missing")
+        for value in [float("nan"), float("inf"), 0.0, 21.0]:
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                backend.generate(
+                    self.frames, self.masks, "empty road", guidance_scale=value
+                )
+
     def test_invalid_reference_rejected_before_loading(self):
         backend = VideoPainterBackend("missing", "missing")
         with self.assertRaises(ValueError):

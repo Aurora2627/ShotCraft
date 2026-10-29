@@ -1,0 +1,9 @@
+{
+  "torch": "2.4.0+cu124",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "kernels": {
+    "FLASH_ATTENTION": "RuntimeError: No available kernel. Aborting execution.",
+    "EFFICIENT_ATTENTION": "available_for_probe_shape",
+    "MATH": "available_for_probe_shape"
+  }
+}

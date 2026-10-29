@@ -1,9 +1,11 @@
 test_adapter_keeps_input_and_returns_raw_frames (test_backend_contract.AdapterContractTests.test_adapter_keeps_input_and_returns_raw_frames) ... ok
 test_float_source_rejected (test_backend_contract.AdapterContractTests.test_float_source_rejected) ... ok
+test_invalid_guidance_rejected_before_loading (test_backend_contract.AdapterContractTests.test_invalid_guidance_rejected_before_loading) ... ok
 test_invalid_reference_rejected_before_loading (test_backend_contract.AdapterContractTests.test_invalid_reference_rejected_before_loading) ... ok
 test_invalid_temporal_length_rejected (test_backend_contract.AdapterContractTests.test_invalid_temporal_length_rejected) ... ok
 test_mask_size_mismatch_rejected (test_backend_contract.AdapterContractTests.test_mask_size_mismatch_rejected) ... ok
 test_nonbinary_masks_rejected (test_backend_contract.AdapterContractTests.test_nonbinary_masks_rejected) ... ok
+test_single_pass_guidance_disables_dynamic_cfg (test_backend_contract.AdapterContractTests.test_single_pass_guidance_disables_dynamic_cfg) ... ok
 test_valid_clip (test_backend_contract.AdapterContractTests.test_valid_clip) ... ok
 test_invalid_feature_shape_rejected (test_core.MaskTests.test_invalid_feature_shape_rejected) ... ok
 test_invalid_target_rejected (test_core.MaskTests.test_invalid_target_rejected) ... ok
@@ -40,6 +42,6 @@ test_wrong_hash_is_not_published (test_download_contract.RangeContracts.test_wro
 test_native_accepted_and_small_rejected_before_loading (test_model_geometry.ModelGeometryTests.test_native_accepted_and_small_rejected_before_loading) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 3.141s
+Ran 28 tests in 3.128s
 
 OK

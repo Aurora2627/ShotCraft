@@ -103,9 +103,19 @@ class VideoPainterBackend:
 
     @torch.inference_mode()
     def generate(
-        self, frames, masks, prompt, seed=42, steps=30, clean_first_frame=None
+        self,
+        frames,
+        masks,
+        prompt,
+        seed=42,
+        steps=30,
+        clean_first_frame=None,
+        guidance_scale=6.0,
+        callback_on_step_end=None,
     ):
         validate_clip(frames, masks)
+        if not np.isfinite(guidance_scale) or not 1.0 <= guidance_scale <= 20.0:
+            raise ValueError("Guidance scale must be finite and between 1 and 20")
         if not isinstance(prompt, str) or not prompt.strip() or not 1 <= steps <= 100:
             raise ValueError("Provide a prompt and 1-100 denoising steps")
         if clean_first_frame is None:
@@ -135,8 +145,9 @@ class VideoPainterBackend:
             width=frames.shape[2],
             num_inference_steps=steps,
             num_videos_per_prompt=1,
-            use_dynamic_cfg=True,
-            guidance_scale=6.0,
+            use_dynamic_cfg=guidance_scale > 1.0,
+            guidance_scale=guidance_scale,
+            callback_on_step_end=callback_on_step_end,
             generator=torch.Generator().manual_seed(seed),
             strength=1.0,
             replace_gt=False,
