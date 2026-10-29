@@ -1,0 +1,10 @@
+{"stage": "before_load", "step": null, "time": 1793239239.940272, "allocated_bytes": 0, "reserved_bytes": 0, "free_bytes": 7451181056, "total_bytes": 8585216000, "peak_allocated_bytes": 0}
+{"stage": "after_load", "step": null, "time": 1793239263.2366753, "allocated_bytes": 218431488, "reserved_bytes": 222298112, "free_bytes": 7228882944, "total_bytes": 8585216000, "peak_allocated_bytes": 218431488}
+{"stage": "denoise_step", "step": 0, "time": 1793239347.0293407, "allocated_bytes": 1435860480, "reserved_bytes": 1556086784, "free_bytes": 5861539840, "total_bytes": 8585216000, "peak_allocated_bytes": 2011466752}
+{"stage": "denoise_step", "step": 1, "time": 1793239407.2312634, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955382272}
+{"stage": "denoise_step", "step": 2, "time": 1793239458.5967653, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}
+{"stage": "denoise_step", "step": 3, "time": 1793239510.0415585, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}
+{"stage": "denoise_step", "step": 4, "time": 1793239560.369687, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}
+{"stage": "denoise_step", "step": 5, "time": 1793239616.7704296, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}
+{"stage": "denoise_step", "step": 6, "time": 1793239669.6009433, "allocated_bytes": 1436379136, "reserved_bytes": 2782920704, "free_bytes": 4634705920, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}
+{"stage": "denoise_step", "step": 7, "time": 1793239724.1015792, "allocated_bytes": 1436379136, "reserved_bytes": 2780823552, "free_bytes": 4636803072, "total_bytes": 8585216000, "peak_allocated_bytes": 2955900928}

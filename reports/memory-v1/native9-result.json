@@ -1,0 +1,9 @@
+{
+  "status": "succeeded",
+  "started": 1793239239.9382749,
+  "load_seconds": 23.312000000150874,
+  "inference_seconds": 477.9849999998696,
+  "peak_allocated_bytes": 4316859392,
+  "scope": "Real backend output; low-step smoke is not a quality benchmark",
+  "finished": 1793239759.1402013
+}

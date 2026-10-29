@@ -1,0 +1,23 @@
+{
+  "raw-candidate.npz": {
+    "bytes": 11641109,
+    "sha256": "2d56310efb74d0a7bd8800c7cd30b3d95c7e66d730ef0e278cb5aa0c14937eb8"
+  },
+  "preview.mp4": {
+    "bytes": 290944,
+    "sha256": "813beeca6f95405caa7d9da26152b1c573a2a9c4291c53dc931a57a3fde3f0d7"
+  },
+  "shape": [
+    9,
+    480,
+    720,
+    3
+  ],
+  "dtype": "float32",
+  "finite": true,
+  "value_range": [
+    0.0,
+    1.0
+  ],
+  "video_frames": 9
+}
