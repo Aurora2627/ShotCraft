@@ -1,0 +1,54 @@
+test_adapter_keeps_input_and_returns_raw_frames (test_backend_contract.AdapterContractTests.test_adapter_keeps_input_and_returns_raw_frames) ... ok
+test_float_source_rejected (test_backend_contract.AdapterContractTests.test_float_source_rejected) ... ok
+test_invalid_guidance_rejected_before_loading (test_backend_contract.AdapterContractTests.test_invalid_guidance_rejected_before_loading) ... ok
+test_invalid_reference_rejected_before_loading (test_backend_contract.AdapterContractTests.test_invalid_reference_rejected_before_loading) ... ok
+test_invalid_temporal_length_rejected (test_backend_contract.AdapterContractTests.test_invalid_temporal_length_rejected) ... ok
+test_mask_size_mismatch_rejected (test_backend_contract.AdapterContractTests.test_mask_size_mismatch_rejected) ... ok
+test_nonbinary_masks_rejected (test_backend_contract.AdapterContractTests.test_nonbinary_masks_rejected) ... ok
+test_single_pass_guidance_disables_dynamic_cfg (test_backend_contract.AdapterContractTests.test_single_pass_guidance_disables_dynamic_cfg) ... ok
+test_valid_clip (test_backend_contract.AdapterContractTests.test_valid_clip) ... ok
+test_invalid_feature_shape_rejected (test_core.MaskTests.test_invalid_feature_shape_rejected) ... ok
+test_invalid_target_rejected (test_core.MaskTests.test_invalid_target_rejected) ... ok
+test_loss_backward_reaches_trainable_residual (test_core.MaskTests.test_loss_backward_reaches_trainable_residual) ... ok
+test_nonfinite_features_rejected (test_core.MaskTests.test_nonfinite_features_rejected) ... ok
+test_protected_region_never_becomes_editable (test_core.MaskTests.test_protected_region_never_becomes_editable) ... ok
+test_zero_initialized_residual_preserves_thresholded_mask (test_core.MaskTests.test_zero_initialized_residual_preserves_thresholded_mask) ... ok
+test_every_frame_is_covered (test_core.PlanningTests.test_every_frame_is_covered) ... ok
+test_invalid_cut_order_and_duplicates (test_core.PlanningTests.test_invalid_cut_order_and_duplicates) ... ok
+test_invalid_dimensions (test_core.PlanningTests.test_invalid_dimensions) ... ok
+test_overlap_has_expected_size (test_core.PlanningTests.test_overlap_has_expected_size) ... ok
+test_windows_do_not_cross_shots (test_core.PlanningTests.test_windows_do_not_cross_shots) ... ok
+test_empty_frame_interval_rejected (test_core.RequestTests.test_empty_frame_interval_rejected) ... ok
+test_missing_asset_rejected_at_execution (test_core.RequestTests.test_missing_asset_rejected_at_execution) ... ok
+test_remove_request (test_core.RequestTests.test_remove_request) ... ok
+test_replacement_requires_reference (test_core.RequestTests.test_replacement_requires_reference) ... ok
+test_resumes_prefix_and_publishes_only_matching_hash (test_download_contract.RangeContracts.test_resumes_prefix_and_publishes_only_matching_hash) ... PROGRESS test/model weights.safetensors 8 8
+VERIFIED test/model weights.safetensors
+ok
+test_server_ignoring_range_cannot_publish_a_file (test_download_contract.RangeContracts.test_server_ignoring_range_cannot_publish_a_file) ... RANGE_RETRY weights.safetensors 0 attempt 1 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 2 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 3 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 4 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 5 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 6 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 7 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 8 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 9 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 10 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 11 RuntimeError
+RANGE_RETRY weights.safetensors 0 attempt 12 RuntimeError
+ok
+test_wrong_hash_is_not_published (test_download_contract.RangeContracts.test_wrong_hash_is_not_published) ... ok
+test_composites_preserve_background_and_inputs (test_evaluation.EvaluationTests.test_composites_preserve_background_and_inputs) ... ok
+test_empty_regions_are_not_perfect_scores (test_evaluation.EvaluationTests.test_empty_regions_are_not_perfect_scores) ... ok
+test_input_copy_does_not_demonstrate_edit_success (test_evaluation.EvaluationTests.test_input_copy_does_not_demonstrate_edit_success) ... ok
+test_letterbox_excluded (test_evaluation.EvaluationTests.test_letterbox_excluded) ... ok
+test_nonfinite_and_wrong_masks_rejected (test_evaluation.EvaluationTests.test_nonfinite_and_wrong_masks_rejected) ... ok
+test_hooks_removed_after_error_and_id_path_rejected (test_inference_memory.InferenceMemoryTests.test_hooks_removed_after_error_and_id_path_rejected) ... ok
+test_real_small_transformer_noise_is_identical (test_inference_memory.InferenceMemoryTests.test_real_small_transformer_noise_is_identical) ... ok
+test_native_accepted_and_small_rejected_before_loading (test_model_geometry.ModelGeometryTests.test_native_accepted_and_small_rejected_before_loading) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 15.196s
+
+OK

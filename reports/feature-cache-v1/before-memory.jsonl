@@ -1,0 +1,4 @@
+{"stage": "before_load", "step": null, "time": 1793262255.0571392, "allocated_bytes": 0, "reserved_bytes": 0, "free_bytes": 7451181056, "total_bytes": 8585216000, "peak_allocated_bytes": 0}
+{"stage": "after_load", "step": null, "time": 1793262271.3925395, "allocated_bytes": 218431488, "reserved_bytes": 222298112, "free_bytes": 7228882944, "total_bytes": 8585216000, "peak_allocated_bytes": 218431488}
+{"stage": "denoise_step", "step": 0, "time": 1793262391.6044073, "allocated_bytes": 2560242688, "reserved_bytes": 2749366272, "free_bytes": 4668260352, "total_bytes": 8585216000, "peak_allocated_bytes": 3192083968}
+{"stage": "failed", "step": null, "time": 1793262418.9766026, "allocated_bytes": 4270556672, "reserved_bytes": 4590665728, "free_bytes": 2826960896, "total_bytes": 8585216000, "peak_allocated_bytes": 4510983680}

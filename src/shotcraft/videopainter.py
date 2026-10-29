@@ -6,6 +6,8 @@ Actual generation remains unverified until recorded in an experiment report.
 """
 
 from pathlib import Path
+from contextlib import nullcontext
+from .inference_memory import disable_single_window_feature_cache
 import sys
 import json
 import numpy as np
@@ -135,28 +137,36 @@ class VideoPainterBackend:
         images = [Image.fromarray(frame) for frame in context]
         masks_pil = [Image.fromarray(mask).convert("RGB") for mask in edit_masks]
         self.load()
-        result = self.pipe(
-            prompt=prompt,
-            image=Image.fromarray(anchor),
-            video=images,
-            masks=masks_pil,
-            num_frames=len(frames),
-            height=frames.shape[1],
-            width=frames.shape[2],
-            num_inference_steps=steps,
-            num_videos_per_prompt=1,
-            use_dynamic_cfg=guidance_scale > 1.0,
-            guidance_scale=guidance_scale,
-            callback_on_step_end=callback_on_step_end,
-            generator=torch.Generator().manual_seed(seed),
-            strength=1.0,
-            replace_gt=False,
-            mask_add=True,
-            stride=len(frames),
-            prev_clip_weight=0.0,
-            id_pool_resample_learnable=False,
-            output_type="np",
-        ).frames[0]
+        # generate() passes exactly one window and never requests an ID cache.
+        transformer = getattr(self.pipe, "transformer", None)
+        memory_context = (
+            disable_single_window_feature_cache(transformer)
+            if isinstance(transformer, torch.nn.Module)
+            else nullcontext()
+        )
+        with memory_context:
+            result = self.pipe(
+                prompt=prompt,
+                image=Image.fromarray(anchor),
+                video=images,
+                masks=masks_pil,
+                num_frames=len(frames),
+                height=frames.shape[1],
+                width=frames.shape[2],
+                num_inference_steps=steps,
+                num_videos_per_prompt=1,
+                use_dynamic_cfg=guidance_scale > 1.0,
+                guidance_scale=guidance_scale,
+                callback_on_step_end=callback_on_step_end,
+                generator=torch.Generator().manual_seed(seed),
+                strength=1.0,
+                replace_gt=False,
+                mask_add=True,
+                stride=len(frames),
+                prev_clip_weight=0.0,
+                id_pool_resample_learnable=False,
+                output_type="np",
+            ).frames[0]
         result = np.asarray(result)
         if result.shape != frames.shape or not np.isfinite(result).all():
             raise RuntimeError("Backend returned an invalid or unexpected video tensor")

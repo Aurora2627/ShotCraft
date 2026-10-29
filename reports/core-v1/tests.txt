@@ -44,9 +44,11 @@ test_empty_regions_are_not_perfect_scores (test_evaluation.EvaluationTests.test_
 test_input_copy_does_not_demonstrate_edit_success (test_evaluation.EvaluationTests.test_input_copy_does_not_demonstrate_edit_success) ... ok
 test_letterbox_excluded (test_evaluation.EvaluationTests.test_letterbox_excluded) ... ok
 test_nonfinite_and_wrong_masks_rejected (test_evaluation.EvaluationTests.test_nonfinite_and_wrong_masks_rejected) ... ok
+test_hooks_removed_after_error_and_id_path_rejected (test_inference_memory.InferenceMemoryTests.test_hooks_removed_after_error_and_id_path_rejected) ... ok
+test_real_small_transformer_noise_is_identical (test_inference_memory.InferenceMemoryTests.test_real_small_transformer_noise_is_identical) ... ok
 test_native_accepted_and_small_rejected_before_loading (test_model_geometry.ModelGeometryTests.test_native_accepted_and_small_rejected_before_loading) ... ok
 
 ----------------------------------------------------------------------
-Ran 33 tests in 2.662s
+Ran 35 tests in 15.196s
 
 OK

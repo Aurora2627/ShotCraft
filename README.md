@@ -28,3 +28,5 @@ Windows，Python 3.11.9，PyTorch 2.4.0，torchvision 0.19.0，transformers 4.42
 30 步对照已完成，车辆残留与重复纹理仍存在，未验证质量改善；详情见 reports/steps30-v1。
 
 [编解码与条件排查](reports/conditioning-audit-v1/README.md)：九帧预处理与 VAE 卸载对照通过，生成问题仍在定位。
+
+[单窗口缓存内存排查](reports/feature-cache-v1/README.md)：35 项测试通过，已避免单窗口路径收集无用逐层状态，完整权重对照待验证。

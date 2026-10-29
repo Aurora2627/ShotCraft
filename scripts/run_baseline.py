@@ -1,6 +1,7 @@
 """Generate and preserve a raw baseline candidate from a prepared local clip."""
 
 import argparse
+import subprocess
 from contextlib import nullcontext
 import hashlib
 import json
@@ -72,6 +73,14 @@ def main():
         profile="smoke" if args.steps < 30 else "fixed_budget_candidate",
         torch=torch.__version__,
         raw_shape=list(frames.shape),
+        feature_cache_policy="disabled_single_window_without_id_resampling",
+        source_commit=subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip(),
     )
     (args.output / "config.json").write_text(
         json.dumps(config, indent=2) + "\n", encoding="utf-8"

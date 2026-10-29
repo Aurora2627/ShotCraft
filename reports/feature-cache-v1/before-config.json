@@ -1,0 +1,20 @@
+{
+  "input": "D:\\career-projects\\data\\ShotCraft\\smoke-car-roundabout-native9-v1\\clip.npz",
+  "output": "D:\\career-projects\\runs\\ShotCraft\\20261029-guidance6-candidate-v1",
+  "prompt": "An empty curved road and surrounding buildings, no car on the road.",
+  "model_root": "D:\\career-projects\\models\\ShotCraft",
+  "steps": 8,
+  "guidance_scale": 6.0,
+  "attention_backend": "efficient",
+  "seed": 42,
+  "input_sha256": "1b68f12387bf7916570d70a6d635a17c820f80862b6c35183dd9bef52c3a8102",
+  "first_frame": "classical_Telea_inpaint",
+  "profile": "smoke",
+  "torch": "2.4.0+cu124",
+  "raw_shape": [
+    9,
+    480,
+    720,
+    3
+  ]
+}
