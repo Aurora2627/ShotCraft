@@ -27,9 +27,10 @@ def main():
     )
     parser.add_argument("--output", type=Path, default=DEFAULT_TARGET)
     parser.add_argument("--steps", type=int, default=8)
+    parser.add_argument("--guidance-scale", type=float, default=1.0)
     args = parser.parse_args()
-    if not 1 <= args.steps <= 100:
-        parser.error("Steps must be between 1 and 100")
+    if not 1 <= args.steps <= 100 or not 1 <= args.guidance_scale <= 20:
+        parser.error("Use 1-100 steps and guidance scale in [1,20]")
     target = args.output
 
     lock = (RUN / "baseline-pipeline.lock").open("a+b")
@@ -97,7 +98,7 @@ def main():
             "--prompt",
             "An empty curved road and surrounding buildings, no car on the road.",
             "--guidance-scale",
-            "1.0",
+            str(args.guidance_scale),
             "--attention-backend",
             "efficient",
             "--steps",

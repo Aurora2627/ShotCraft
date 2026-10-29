@@ -47,6 +47,6 @@ test_nonfinite_and_wrong_masks_rejected (test_evaluation.EvaluationTests.test_no
 test_native_accepted_and_small_rejected_before_loading (test_model_geometry.ModelGeometryTests.test_native_accepted_and_small_rejected_before_loading) ... ok
 
 ----------------------------------------------------------------------
-Ran 33 tests in 2.681s
+Ran 33 tests in 2.662s
 
 OK
