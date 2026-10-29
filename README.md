@@ -11,7 +11,7 @@
 
 ## 实验与代码
 
-[首次真实推理与内存记录](reports/memory-v1/README.md) · [质量诊断与失败分析](reports/evaluation-v1/README.md) · [系统设计](docs/design.zh-CN.md) · [版本历史](VERSION_HISTORY.md)
+[首次真实推理与内存记录](reports/memory-v1/README.md) · [质量诊断与失败分析](reports/evaluation-v1/README.md) · [8/30 步对照](reports/steps30-v1/README.md) · [系统设计](docs/design.zh-CN.md) · [版本历史](VERSION_HISTORY.md)
 
 输入准备：scripts/prepare_case.py；推理：scripts/run_baseline.py；后台运行与超时保护：scripts/continue_baseline.py；区域约束与指标：src/shotcraft/evaluation.py；离线评测：scripts/evaluate_run.py；VAE 排查：scripts/diagnose_vae.py。源码、配置、种子、输入哈希、原始输出与失败日志均保存。
 
@@ -24,3 +24,5 @@ Windows，Python 3.11.9，PyTorch 2.4.0，torchvision 0.19.0，transformers 4.42
 ## 结论边界
 
 当前只有单个开发片段的运行与失败诊断。区域融合可强制保留背景，但不能证明目标被正确移除；已有误差指标不替代语义、感知或时序质量评测。VideoPainter 的模型结构与预训练权重属于上游成果，本项目不声称原创生成主干。上游许可限学术、科研和教育用途，当前按研究原型开展。
+
+30 步对照已完成，车辆残留与重复纹理仍存在，未验证质量改善；详情见 reports/steps30-v1。

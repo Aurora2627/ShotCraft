@@ -1,0 +1,100 @@
+{
+  "configuration_changes": {
+    "steps": [
+      8,
+      30
+    ],
+    "profile": [
+      "smoke",
+      "fixed_budget_candidate"
+    ],
+    "output": [
+      "D:\\career-projects\\runs\\ShotCraft\\20261029-baseline-memory-smoke-v3",
+      "D:\\career-projects\\runs\\ShotCraft\\20261029-steps30-candidate-v1"
+    ]
+  },
+  "steps8": {
+    "input_copy_control": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.0,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.0
+    },
+    "telea_per_frame": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2860276401042938,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.18220743536949158
+    },
+    "raw": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.07742959260940552,
+      "edited_area_change_mae": 0.25975051522254944,
+      "background_delta_error": 0.07290429621934891,
+      "boundary_gradient_error": 0.16483570635318756
+    },
+    "hard_composite": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.25975051522254944,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.2030927985906601
+    },
+    "inner_feather_3": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2531827688217163,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.06769760698080063
+    }
+  },
+  "steps30": {
+    "input_copy_control": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.0,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.0
+    },
+    "telea_per_frame": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2860276401042938,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.18220743536949158
+    },
+    "raw": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.08402790874242783,
+      "edited_area_change_mae": 0.26280897855758667,
+      "background_delta_error": 0.07696468383073807,
+      "boundary_gradient_error": 0.16912269592285156
+    },
+    "hard_composite": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.26280897855758667,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.22012130916118622
+    },
+    "inner_feather_3": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2556537091732025,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.07337377220392227
+    }
+  }
+}

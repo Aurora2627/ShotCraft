@@ -1,0 +1,53 @@
+{
+  "scope": "Single low-step development clip. Reference-deviation diagnostics only; no ground-truth edited video or semantic success claim. Composited background preservation is enforced by construction. Delta error is not flow compensated and is not a temporal-quality score.",
+  "input_sha256": "1b68f12387bf7916570d70a6d635a17c820f80862b6c35183dd9bef52c3a8102",
+  "raw_sha256": "8148d15f7193ae64c7f9c275159cd12d52d344390feb92a6792fc9b96db75b0c",
+  "shape": [
+    9,
+    480,
+    720,
+    3
+  ],
+  "metrics": {
+    "input_copy_control": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.0,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.0
+    },
+    "telea_per_frame": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2860276401042938,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.18220743536949158
+    },
+    "raw": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.08402790874242783,
+      "edited_area_change_mae": 0.26280897855758667,
+      "background_delta_error": 0.07696468383073807,
+      "boundary_gradient_error": 0.16912269592285156
+    },
+    "hard_composite": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.26280897855758667,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.22012130916118622
+    },
+    "inner_feather_3": {
+      "background_pixels": 2239700,
+      "edited_pixels": 384700,
+      "background_mae": 0.0,
+      "edited_area_change_mae": 0.2556537091732025,
+      "background_delta_error": 0.0,
+      "boundary_gradient_error": 0.07337377220392227
+    }
+  }
+}
