@@ -4,6 +4,7 @@ This is a bounded, single-run local job, not a recurring scheduler. Logs and
 process state live outside the repository. Never starts a second downloader.
 """
 
+import argparse
 import json
 import msvcrt
 import os
@@ -15,10 +16,22 @@ import psutil
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = Path("D:/career-projects/runs/ShotCraft/setup-20261028")
-TARGET = Path("D:/career-projects/runs/ShotCraft/20261029-baseline-memory-smoke-v3")
+DEFAULT_TARGET = Path(
+    "D:/career-projects/runs/ShotCraft/20261029-baseline-memory-smoke-v3"
+)
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Run one recorded baseline with a one-hour generation limit"
+    )
+    parser.add_argument("--output", type=Path, default=DEFAULT_TARGET)
+    parser.add_argument("--steps", type=int, default=8)
+    args = parser.parse_args()
+    if not 1 <= args.steps <= 100:
+        parser.error("Steps must be between 1 and 100")
+    target = args.output
+
     lock = (RUN / "baseline-pipeline.lock").open("a+b")
     lock.seek(0)
     if lock.read(1) == b"":
@@ -67,7 +80,7 @@ def main():
             state["checked"] = time.time()
             save()
             time.sleep(15)
-        if TARGET.exists():
+        if target.exists():
             raise FileExistsError(
                 "An experiment already exists at the target; inspect it instead of overwriting"
             )
@@ -80,7 +93,7 @@ def main():
             "--input",
             "D:/career-projects/data/ShotCraft/smoke-car-roundabout-native9-v1/clip.npz",
             "--output",
-            str(TARGET),
+            str(target),
             "--prompt",
             "An empty curved road and surrounding buildings, no car on the road.",
             "--guidance-scale",
@@ -88,7 +101,7 @@ def main():
             "--attention-backend",
             "efficient",
             "--steps",
-            "8",
+            str(args.steps),
             "--seed",
             "42",
         ]
@@ -112,7 +125,7 @@ def main():
             )
         state.update(phase="completed", finished=time.time())
         save()
-        print("REAL_BASELINE_COMPLETED", TARGET, flush=True)
+        print("REAL_BASELINE_COMPLETED", target, flush=True)
     except Exception as error:
         state.update(phase="failed", error=str(error), finished=time.time())
         save()

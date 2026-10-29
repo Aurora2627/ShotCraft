@@ -1,0 +1,17 @@
+{
+  "scope": "Single-frame VAE reconstruction diagnostic; no edit or temporal quality claim.",
+  "modes": {
+    "tiled": {
+      "status": "succeeded",
+      "psnr": 33.74894714355469,
+      "mae": 0.010988485999405384,
+      "peak_allocated_bytes": 3089966592
+    },
+    "untiled": {
+      "status": "succeeded",
+      "psnr": 33.63048553466797,
+      "mae": 0.011165322735905647,
+      "peak_allocated_bytes": 10933240832
+    }
+  }
+}
